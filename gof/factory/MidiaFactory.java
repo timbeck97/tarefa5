@@ -1,4 +1,5 @@
 public class MidiaFactory {
+    //classe principal responsavel pela criacao dos objetos
     public static Midia criarMidia(TipoMidia tipo, String titulo, String autorOuEdicao) {
         switch (tipo) {
             case LIVRO:

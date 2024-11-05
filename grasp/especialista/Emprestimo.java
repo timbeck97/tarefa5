@@ -27,7 +27,8 @@ public class Emprestimo {
         return livro;
     }
 
- 
+    //calculo da multa modificada para ser feita na classe emprestimo
+    //dessa forma a classe biblioteca não precisa saber como calcular a multa
     public double calcularMulta() {
         long diasAtraso = ChronoUnit.DAYS.between(dataDeDevolucao, LocalDate.now());
         double multaPorDia = 2.0;

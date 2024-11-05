@@ -4,7 +4,9 @@ import java.util.List;
 
 public class Biblioteca {
    private List<Emprestimo> emprestimos;
-    private InterfaceNotificacao notificador; // Composição com a interface Notificador
+
+   //classe biblioteca totalmente desacoplada da classe que realiza o envio de notificacao
+    private InterfaceNotificacao notificador; 
 
     public Biblioteca(InterfaceNotificacao notificador) {
         this.emprestimos = new ArrayList<>();

@@ -3,6 +3,8 @@ import java.time.*;
 public class EmprestimoService {
     private List<Emprestimo> emprestimos = new ArrayList<>();
 
+    //classe service utilizada para implementar as regras de emprestimo
+
     public void registrarEmprestimo(Livro livro, String nomeDoUsuario, LocalDate dataDeDevolucao) {
         Emprestimo emprestimo = new Emprestimo(livro, nomeDoUsuario, dataDeDevolucao);
         emprestimos.add(emprestimo);

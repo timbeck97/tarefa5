@@ -5,6 +5,10 @@ import java.util.List;
 public class Biblioteca {
     private List<Emprestimo> emprestimos;
 
+
+    //removida a logica de calculo de multa para as classes que implementam a interface CalculoMultaInterface
+    
+
     public Biblioteca() {
         this.emprestimos = new ArrayList<>();
     }

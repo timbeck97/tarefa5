@@ -4,6 +4,8 @@ public class LivroService{
 
  private List<Emprestimo> emprestimos = new ArrayList<>();
 
+    //classe de servico criada para separar a logica de emprestimo da classe Livro
+
     private List<Livro> livros = new ArrayList<>();
 
     public void adicionarLivro(String titulo) {

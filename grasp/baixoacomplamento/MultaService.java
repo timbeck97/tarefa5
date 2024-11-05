@@ -1,6 +1,9 @@
 import java.util.*;
 import java.time.*;
 public class MultaService {
+
+//classe service utilizada para implementar as regras de multa
+
  public void calcularMultas(List<Emprestimo> emprestimos) {
         for (Emprestimo emprestimo : emprestimos) {
             if (!emprestimo.isDevolvido()) {

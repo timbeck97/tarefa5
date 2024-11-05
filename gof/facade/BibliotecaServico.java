@@ -2,6 +2,10 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 class BibliotecaServico {
+    //classe principal que irá orquestrar as ações do sistema
+    //possui todas dependencias necessárias para realizar as ações
+    //de forma simples e direta, dessa forma desacopla a classe main com as regras de negocio do sistema
+    
     private CatalogoLivros catalogoLivros = new CatalogoLivros();
     private CatalogoRevistas catalogoRevistas = new CatalogoRevistas();
     private ServicoEmprestimo servicoEmprestimo = new ServicoEmprestimo();

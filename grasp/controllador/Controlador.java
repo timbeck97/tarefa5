@@ -1,6 +1,11 @@
 import java.util.*;
 import java.time.*;
 public class Controlador {
+
+    //classe de controle criada para realizar as operacoes, ela serve como intermediario entre a interface e a biblioteca
+    //ela recebe os dados da interface e os envia para a biblioteca, e tambem recebe os dados da biblioteca e os envia para a interface
+    //ela nao possui regras de negocio, apenas realiza a comunicacao entre a interface e a biblioteca
+
     private Biblioteca biblioteca;
 
     public Controlador(Biblioteca biblioteca) {

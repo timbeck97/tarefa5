@@ -2,6 +2,9 @@ import java.util.*;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 public class LivroService{
+
+    //classe service utilizada para implementar as regras de emprestimo
+
 	 private List<Livro> livros = new ArrayList<>();
 
     public void adicionarLivro(String titulo) {

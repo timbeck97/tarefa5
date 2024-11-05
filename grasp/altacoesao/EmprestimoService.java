@@ -4,6 +4,8 @@ public class EmprestimoService{
 
  private List<Emprestimo> emprestimos = new ArrayList<>();
 
+    //classe de servico criada para separar a logica de emprestimo da classe Livro
+
     public void registrarEmprestimo(Livro livro, String nomeDoUsuario, LocalDate dataDeDevolucao) {
         Emprestimo emprestimo = new Emprestimo(livro, nomeDoUsuario, dataDeDevolucao);
         emprestimos.add(emprestimo);

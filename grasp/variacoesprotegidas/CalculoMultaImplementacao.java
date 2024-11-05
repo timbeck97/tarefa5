@@ -2,6 +2,9 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 class CalculoMultaImplementacao implements CalculoMultaInterface {
+
+    //classe que implementa a interface de calculo de multa
+
     private final double valorPorDia;
 
     public CalculoMultaImplementacao(double valorPorDia) {

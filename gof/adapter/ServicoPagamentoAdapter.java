@@ -1,3 +1,7 @@
+
+//classe adapter que implementa a interface ServicoPagamento e utiliza a classe ServicoPagamentoExterno
+//dessa forma o sistema interno nao precisa saber como o sistema externo funciona
+//dessa forma reduzindo o acoplamento entre os sistemas
 class ServicoPagamentoAdapter implements ServicoPagamento {
     private ServicoPagamentoExterno servicoPagamentoExterno;
 

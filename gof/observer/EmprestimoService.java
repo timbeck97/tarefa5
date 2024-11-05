@@ -30,6 +30,8 @@ public class EmprestimoService {
         }
     }
 
+    //aqui onde "a magica acontece" pois essa classe depende de uma abstração, dessa forma ela não depende de uma implementação concreta
+    // e sim de uma interface, o que facilita a manutenção e a evolução do código.
     public void verificarEmprestimos() {
         for (Emprestimo emprestimo : emprestimos) {
             if (!emprestimo.isDevolvido() && emprestimo.diasParaDevolucao() > 0) {
